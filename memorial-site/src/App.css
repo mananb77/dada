@@ -228,8 +228,16 @@
   font-size: 1rem;
   color: var(--navy-light);
   font-weight: 300;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.25rem;
   letter-spacing: 0.05em;
+}
+
+.hero-subtitle-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.95rem;
+  color: var(--gold);
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
 }
 
 .hero-links {
@@ -365,6 +373,15 @@
   margin-top: 0.15rem;
 }
 
+.bio-card-detail-hindi {
+  display: block;
+  font-family: var(--font-hindi);
+  font-size: 0.75rem;
+  color: var(--gold);
+  margin-top: 0.1rem;
+  opacity: 0.85;
+}
+
 /* Personality trait cards */
 .bio-personality-cards {
   display: grid;
@@ -412,6 +429,15 @@
   font-size: 0.85rem;
   color: var(--navy-light);
   line-height: 1.6;
+}
+
+.bio-personality-desc-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.8rem;
+  color: var(--gold);
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  opacity: 0.85;
 }
 
 @media (max-width: 600px) {
@@ -553,7 +579,7 @@
    FAMILY TREE SECTION
    ======================================== */
 .family-tree {
-  background: var(--cream);
+  background: white;
 }
 
 .ft {
@@ -727,7 +753,7 @@
   gap: 0.5rem;
   justify-content: center;
   margin-top: 0.5rem;
-  max-width: 700px;
+  max-width: 900px;
 }
 
 .ft-sibling {
@@ -927,7 +953,7 @@
    TIMELINE SECTION
    ======================================== */
 .timeline {
-  background: var(--cream);
+  background: white;
 }
 
 .timeline-container {
@@ -998,6 +1024,15 @@
   line-height: 1.6;
 }
 
+.timeline-desc-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.85rem;
+  color: var(--gold);
+  line-height: 1.7;
+  margin-top: 0.35rem;
+  opacity: 0.85;
+}
+
 @media (max-width: 600px) {
   .timeline-container::before {
     left: 12px;
@@ -1016,7 +1051,7 @@
    GALLERY SECTION
    ======================================== */
 .gallery {
-  background: var(--cream);
+  background: white;
 }
 
 .gallery-grid {
@@ -1125,13 +1160,47 @@
   font-weight: 600;
 }
 
+.closing-tribute {
+  font-size: 1.05rem;
+  color: var(--navy);
+  line-height: 1.9;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-style: italic;
+}
+
+.closing-tribute-hindi {
+  font-family: var(--font-hindi);
+  font-size: 1rem;
+  color: var(--gold);
+  line-height: 1.9;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+}
+
+.closing-diya-prompt {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--navy-light);
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+.closing-diya-prompt-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.85rem;
+  color: var(--gold);
+  margin-top: 0.15rem;
+  margin-bottom: 0.5rem;
+}
+
 .closing-shanti {
   font-family: var(--font-heading);
   font-size: 1.1rem;
   color: var(--navy-light);
   font-style: italic;
   letter-spacing: 0.1em;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .closing-years {
