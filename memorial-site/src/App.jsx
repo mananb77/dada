@@ -581,6 +581,9 @@ function App() {
             <Link to="/lifestory" className="footer-link">Life Story</Link>
             <Link to="/memories" className="footer-link">Memories</Link>
           </div>
+          <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="footer-whatsapp">
+            Share on WhatsApp
+          </a>
           <p className="footer-family">The Bhargava Family</p>
           <p className="footer-family-hindi">भार्गव परिवार</p>
         </div>
