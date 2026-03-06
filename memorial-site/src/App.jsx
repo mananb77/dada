@@ -125,6 +125,9 @@ function App() {
           <h1 className="hero-name-hindi">कैलाश नाथ भार्गव</h1>
           <p className="hero-name-english">Kailash Nath Bhargava</p>
           <p className="hero-years">February 13, 1941 &ndash; March 4, 2026</p>
+          <p className="hero-subtitle">
+            A Life of Generosity, Discipline &amp; Quiet Faith
+          </p>
           <div className="hero-quote">
             <p className="hero-quote-hindi">जीवन में दूसरों का भला चाहता है, उसका भला अपने आप भगवान करता है।</p>
             <p className="hero-quote-english">&ldquo;In life, whoever wishes well for others &mdash; God automatically does good for them.&rdquo;</p>
@@ -136,6 +139,9 @@ function App() {
             </Link>
             <a href="https://youtu.be/r78Pt9suaz0" target="_blank" rel="noopener noreferrer" className="hero-link">
               Watch Life Story Video
+            </a>
+            <a href="https://photos.app.goo.gl/naoPTqv14p7ocMEZ7" target="_blank" rel="noopener noreferrer" className="hero-link">
+              Best Photos
             </a>
             <Link to="/memories" className="hero-link">
               Leave a Memory
