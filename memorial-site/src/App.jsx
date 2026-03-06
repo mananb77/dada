@@ -42,6 +42,8 @@ function Nav() {
           <li><a href="#bio" onClick={closeMenu}>His Life</a></li>
           <li><a href="#family" onClick={closeMenu}>Family</a></li>
           <li><a href="#journey" onClick={closeMenu}>Journey</a></li>
+          <li><a href="#wisdom" onClick={closeMenu}>Wisdom</a></li>
+          <li><a href="#values" onClick={closeMenu}>Values</a></li>
           <li><a href="#gallery" onClick={closeMenu}>Photos</a></li>
         </ul>
       </div>
@@ -69,6 +71,37 @@ function BackToTop() {
   );
 }
 
+function Diya() {
+  const [lit, setLit] = useState(false);
+
+  return (
+    <div className="diya-container">
+      <button
+        className={`diya ${lit ? 'diya-lit' : ''}`}
+        onClick={() => !lit && setLit(true)}
+        aria-label={lit ? 'Diya is lit' : 'Light a diya'}
+      >
+        <div className="diya-flame-wrap">
+          {lit && (
+            <>
+              <div className="diya-glow" />
+              <div className="diya-flame" />
+              <div className="diya-flame-inner" />
+            </>
+          )}
+          <div className="diya-wick" />
+        </div>
+        <svg className="diya-bowl" viewBox="0 0 70 35" fill="none">
+          <path d="M5 8 Q5 0 18 0 L52 0 Q65 0 65 8 L60 30 Q58 35 35 35 Q12 35 10 30 Z" fill="#C4A35A" />
+          <path d="M5 8 Q5 0 18 0 L52 0 Q65 0 65 8 L60 12 Q58 16 35 16 Q12 16 10 12 Z" fill="#D4B36A" />
+        </svg>
+      </button>
+      <p className="diya-label">{lit ? 'Diya lit for Dada' : 'Light a diya for Dada'}</p>
+      <p className="diya-label-hindi">{lit ? 'दादा के लिए दीया जलाया' : 'दादा के लिए दीया जलाएं'}</p>
+    </div>
+  );
+}
+
 function App() {
   const containerRef = useScrollReveal();
 
@@ -86,15 +119,20 @@ function App() {
           <p className="hero-prayer">ॐ शान्ति</p>
 
           <div className="hero-photo-container">
-            {/* Add hero photo here */}
+            <img src="/dada/photos/dada-hero.png" alt="Kailash Nath Bhargava" />
           </div>
 
-          <h1 className="hero-name-hindi">दादा जी</h1>
-          <p className="hero-name-english">Dada</p>
-          <p className="hero-years">&nbsp;</p>
+          <h1 className="hero-name-hindi">कैलाश नाथ भार्गव</h1>
+          <p className="hero-name-english">Kailash Nath Bhargava</p>
+          <p className="hero-years">February 13, 1941 &ndash; March 4, 2026</p>
           <p className="hero-subtitle">
-            {/* Add subtitle here */}
+            Sportsman &middot; NCC Underofficer &middot; Banker &middot; Father &middot; Man of Faith
           </p>
+
+          <div className="hero-quote">
+            <p className="hero-quote-hindi">जीवन में दूसरों का भला चाहता है, उसका भला अपने आप भगवान करता है।</p>
+            <p className="hero-quote-english">&ldquo;In life, whoever wishes well for others &mdash; God automatically does good for them.&rdquo;</p>
+          </div>
 
           <div className="hero-links">
             <Link to="/lifestory" className="hero-link hero-link-primary">
@@ -102,9 +140,6 @@ function App() {
             </Link>
             <Link to="/memories" className="hero-link">
               Leave a Memory
-            </Link>
-            <Link to="/manan" className="hero-link">
-              Manan&rsquo;s Memories
             </Link>
           </div>
 
@@ -121,8 +156,48 @@ function App() {
           <p className="section-title-hindi">उनका जीवन</p>
 
           <p className="bio-text">
-            {/* Add bio content here */}
+            Born on February 13, 1941, in Beawar, Rajasthan, into a family whose legacy of generosity and service shaped everything that followed. A boy who milked buffaloes at dawn, walked fifteen kilometers daily to college, and built every opportunity through quiet relationships and unwavering character.
           </p>
+
+          <div className="bio-cards">
+            <div className="bio-card">
+              <span className="bio-card-label">Smart</span>
+              <span className="bio-card-hindi">बुद्धिमान</span>
+              <span className="bio-card-detail">Sharp mind, quick learner</span>
+            </div>
+            <div className="bio-card">
+              <span className="bio-card-label">Kind</span>
+              <span className="bio-card-hindi">दयालु</span>
+              <span className="bio-card-detail">Compassion for all</span>
+            </div>
+            <div className="bio-card">
+              <span className="bio-card-label">Talented</span>
+              <span className="bio-card-hindi">प्रतिभाशाली</span>
+              <span className="bio-card-detail">Sportsman, leader, banker</span>
+            </div>
+            <div className="bio-card">
+              <span className="bio-card-label">Caring</span>
+              <span className="bio-card-hindi">परवाह करने वाले</span>
+              <span className="bio-card-detail">For the entire Bhargava sabha &amp; thousands more</span>
+            </div>
+            <div className="bio-card">
+              <span className="bio-card-label">Determined</span>
+              <span className="bio-card-hindi">दृढ़ निश्चयी</span>
+              <span className="bio-card-detail">Work was his passion</span>
+            </div>
+            <div className="bio-card">
+              <span className="bio-card-label">Devoted</span>
+              <span className="bio-card-hindi">समर्पित</span>
+              <span className="bio-card-detail">To family, faith &amp; service</span>
+            </div>
+          </div>
+
+          <div className="bio-cta fade-in">
+            <Link to="/lifestory" className="bio-cta-link">
+              Read His Full Life Story
+              <span className="bio-cta-hindi">संपूर्ण जीवन कथा पढ़ें</span>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -130,11 +205,161 @@ function App() {
 
       {/* ======== FAMILY ======== */}
       <section className="family-tree" id="family">
-        <div className="section-inner fade-in">
-          <h2 className="section-title">Family</h2>
-          <p className="section-title-hindi">परिवार</p>
+        <div className="section-inner">
+          <h2 className="section-title fade-in">Our Family</h2>
+          <p className="section-title-hindi fade-in">हमारा परिवार</p>
 
-          {/* Add family tree content here */}
+          <div className="ft fade-in">
+            {/* Generation 1: Parents */}
+            <div className="ft-gen ft-gen-parents">
+              <div className="ft-node">
+                <span className="ft-name">Shri Ram Bhargava</span>
+                <span className="ft-name-hindi">श्री राम भार्गव</span>
+                <span className="ft-role">Father</span>
+              </div>
+              <span className="ft-amp">&amp;</span>
+              <div className="ft-node">
+                <span className="ft-name">Narayani Bhargava</span>
+                <span className="ft-name-hindi">नारायणी भार्गव</span>
+                <span className="ft-role">Mother</span>
+              </div>
+            </div>
+
+            <div className="ft-connector" />
+
+            {/* Siblings row */}
+            <p className="ft-sibling-label">Their Children</p>
+            <div className="ft-siblings">
+              <div className="ft-sibling">
+                <span className="ft-name">Vijayshankar</span>
+                <span className="ft-name-hindi">विजयशंकर</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Sharada</span>
+                <span className="ft-name-hindi">शारदा</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Shivshankar</span>
+                <span className="ft-name-hindi">शिवशंकर</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Gorishankar</span>
+                <span className="ft-name-hindi">गोरीशंकर</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Shushila</span>
+                <span className="ft-name-hindi">सुशीला</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Harishankar</span>
+                <span className="ft-name-hindi">हरिशंकर</span>
+              </div>
+              <div className="ft-sibling ft-sibling-self">
+                <span className="ft-name">Kalpana</span>
+                <span className="ft-name-hindi">कल्पना</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Kanti</span>
+                <span className="ft-name-hindi">कान्ति</span>
+              </div>
+            </div>
+
+            <div className="ft-connector" />
+
+            {/* Generation 2: Dada & Dadi */}
+            <div className="ft-gen ft-gen-center">
+              <div className="ft-node ft-node-highlight">
+                <span className="ft-name">Kailash Nath Bhargava</span>
+                <span className="ft-name-hindi">कैलाश नाथ भार्गव</span>
+                <span className="ft-years">Dada</span>
+              </div>
+              <span className="ft-amp">&amp;</span>
+              <div className="ft-node">
+                <span className="ft-name">Kalpana Bhargava</span>
+                <span className="ft-name-hindi">कल्पना भार्गव</span>
+                <span className="ft-role">Wife</span>
+              </div>
+            </div>
+
+            <div className="ft-connector" />
+
+            {/* Generation 3 & 4: Sons, spouses, children */}
+            <div className="ft-branches">
+              {/* Branch 1: Harsh */}
+              <div className="ft-branch">
+                <div className="ft-couple">
+                  <div className="ft-node">
+                    <span className="ft-name">Harsh &ldquo;Tinu&rdquo;</span>
+                    <span className="ft-name-hindi">हर्ष &ldquo;टीनू&rdquo;</span>
+                  </div>
+                  <span className="ft-amp">&amp;</span>
+                  <div className="ft-node">
+                    <span className="ft-name">Aparna</span>
+                    <span className="ft-name-hindi">अपर्णा</span>
+                  </div>
+                </div>
+                <div className="ft-connector ft-connector-sm" />
+                <div className="ft-grandchildren">
+                  <div className="ft-leaf">
+                    <span className="ft-name">Naman</span>
+                    <span className="ft-name-hindi">नमन</span>
+                  </div>
+                  <div className="ft-leaf">
+                    <span className="ft-name">Manan</span>
+                    <span className="ft-name-hindi">मनन</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Branch 2: Shailendra */}
+              <div className="ft-branch">
+                <div className="ft-couple">
+                  <div className="ft-node">
+                    <span className="ft-name">Shailendra &ldquo;Binu&rdquo;</span>
+                    <span className="ft-name-hindi">शैलेन्द्र &ldquo;बीनू&rdquo;</span>
+                  </div>
+                  <span className="ft-amp">&amp;</span>
+                  <div className="ft-node">
+                    <span className="ft-name">Chavi</span>
+                    <span className="ft-name-hindi">छवि</span>
+                  </div>
+                </div>
+                <div className="ft-connector ft-connector-sm" />
+                <div className="ft-grandchildren">
+                  <div className="ft-leaf">
+                    <span className="ft-name">Vedang</span>
+                    <span className="ft-name-hindi">वेदांग</span>
+                  </div>
+                  <div className="ft-leaf">
+                    <span className="ft-name">Anisha</span>
+                    <span className="ft-name-hindi">अनीशा</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Branch 3: Bhaiyu */}
+              <div className="ft-branch">
+                <div className="ft-couple">
+                  <div className="ft-node">
+                    <span className="ft-name">Bhaiyu</span>
+                    <span className="ft-name-hindi">भैयू</span>
+                  </div>
+                  <span className="ft-amp">&amp;</span>
+                  <div className="ft-node">
+                    <span className="ft-name">Yuthika</span>
+                    <span className="ft-name-hindi">युथिका</span>
+                  </div>
+                </div>
+                <div className="ft-connector ft-connector-sm" />
+                <div className="ft-grandchildren">
+                  <div className="ft-leaf">
+                    <span className="ft-name">Somya</span>
+                    <span className="ft-name-hindi">सौम्या</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -146,7 +371,159 @@ function App() {
           <h2 className="section-title">His Journey</h2>
           <p className="section-title-hindi">उनकी यात्रा</p>
 
-          {/* Add timeline content here */}
+          <div className="timeline-container">
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">1941</p>
+              <p className="timeline-city">Beawar</p>
+              <p className="timeline-desc">Born on February 13 in Diggi Mohalla, into the Bhargav family. Grew up in Bhargav Gali, surrounded by kinship and legacy.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">1947</p>
+              <p className="timeline-city">Independence &amp; Partition</p>
+              <p className="timeline-desc">Witnessed the turmoil of Partition at age six. The story of Mor Singh and the salt of Dewan Bahadur would stay with him forever.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">~1951</p>
+              <p className="timeline-city">The Bageecha</p>
+              <p className="timeline-desc">Family moved to the twenty-eight bigha garden. Began raising cows, buffaloes, and thirteen goats. Built the body that would carry him through decades.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">~1955</p>
+              <p className="timeline-city">NCC &amp; School</p>
+              <p className="timeline-desc">Joined the NCC at fourteen, rising to Sergeant. Attended the Sanatan Dharm School his great-grandfather had built. Basketball became his great love.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">~1959</p>
+              <p className="timeline-city">Ajmer</p>
+              <p className="timeline-desc">Arrived for B.Com Previous with thirty rupees a month. Taught his landlord&rsquo;s children for free; received free rent and meals in return.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">~1961</p>
+              <p className="timeline-city">Jaipur</p>
+              <p className="timeline-desc">Walked fifteen kilometers daily to Commerce College. Rose to NCC Underofficer. Selected for military commission during the 1962 China war.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">~1963</p>
+              <p className="timeline-city">Union Bank</p>
+              <p className="timeline-desc">Joined Union Bank through a network of relationships &mdash; morning walks with a retired GM, a maternal uncle&rsquo;s Ramlila companion. Never applied. Was picked.</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">Decades</p>
+              <p className="timeline-city">Banking Career</p>
+              <p className="timeline-desc">Served across Rajasthan &mdash; Jodhpur, Kota, Ajmer, Udaipur. Rose to Branch Manager. Built a family. Carried forward the values of seven generations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ======== WISDOM / QUOTES ======== */}
+      <section className="quotes" id="wisdom">
+        <div className="section-inner fade-in">
+          <h2 className="section-title">His Words</h2>
+          <p className="section-title-hindi">उनकी बातें</p>
+
+          <div className="quotes-grid">
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">जीवन के अंदर दूसरों का भला चाहो, उसका भला अपने आप भगवान करता है।</p>
+              <p className="quote-english">&ldquo;In life, wish well for others &mdash; God takes care of the rest Himself.&rdquo;</p>
+              <p className="quote-context">His life&rsquo;s central philosophy</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">सारी चीजें आई हैं &mdash; मैंने कोई चलाके अप्लाई नहीं किया। ऑटोमेटिक।</p>
+              <p className="quote-english">&ldquo;Everything came to me &mdash; I never chased or applied for anything. It all came automatically.&rdquo;</p>
+              <p className="quote-context">On his career</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">एक्सरसाइज हो जाती है मेरी।</p>
+              <p className="quote-english">&ldquo;It&rsquo;s my exercise.&rdquo;</p>
+              <p className="quote-context">Why he walked 15 km daily instead of paying 4 paisa for the bus</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">भगवान अपने आप देगा। मेरे तो ये शिव जी की कृपा है।</p>
+              <p className="quote-english">&ldquo;God will provide on His own. This is Shiva&rsquo;s grace upon me.&rdquo;</p>
+              <p className="quote-context">On faith and self-reliance</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">जो लेने में ही बिलीव करते हैं उनका भगवान बहुत बुरा करता है।</p>
+              <p className="quote-english">&ldquo;Those who only believe in taking &mdash; God does not spare them.&rdquo;</p>
+              <p className="quote-context">On sacrifice and family</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">सात पीढ़ी की नॉलेज रहे &mdash; दादा के दादा के दादा &mdash; ये सब तुम्हारी नॉलेज में रहे।</p>
+              <p className="quote-english">&ldquo;Let the knowledge of seven generations remain with you &mdash; all of them should live in your memory.&rdquo;</p>
+              <p className="quote-context">His parting words to the family</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">इतनी स्टोरी है कि 10 रोज तक अपन डिस्कस करें तो खत्म नहीं हुए।</p>
+              <p className="quote-english">&ldquo;There are so many stories, we could talk for 10 days and still not finish.&rdquo;</p>
+              <p className="quote-context">On his life&rsquo;s many chapters</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* ======== VALUES ======== */}
+      <section className="values" id="values">
+        <div className="section-inner fade-in">
+          <h2 className="section-title">What He Lived By</h2>
+          <p className="section-title-hindi">उनके जीवन मूल्य</p>
+
+          <div className="bio-personality-cards">
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Generosity</span>
+              <span className="bio-personality-hindi">उदारता</span>
+              <p className="bio-personality-desc">
+                His great-grandfather gave away a hundred bighas of land. His grandfather gave up his family to help a stranger marry. Kailash taught children for free and received kindness in return. Generosity was the family&rsquo;s inheritance.
+              </p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Self-Reliance</span>
+              <span className="bio-personality-hindi">आत्मनिर्भरता</span>
+              <p className="bio-personality-desc">
+                He walked fifteen kilometers daily rather than spend four annas on a bus. He cooked his own meals, managed his year on thirty rupees a month. He never waited for things to be given to him.
+              </p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Discipline</span>
+              <span className="bio-personality-hindi">अनुशासन</span>
+              <p className="bio-personality-desc">
+                Up at four in the morning to milk the animals. NCC sergeant at fourteen. Underofficer by college. Basketball until the sweat could fill half a bucket. He committed fully to everything he did.
+              </p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Faith</span>
+              <span className="bio-personality-hindi">श्रद्धा</span>
+              <p className="bio-personality-desc">
+                &ldquo;God will provide on His own. This is Shiva&rsquo;s grace upon me.&rdquo; His quiet faith was not passive &mdash; it was built on a lifetime of doing the right thing and trusting the outcome.
+              </p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Family Legacy</span>
+              <span className="bio-personality-hindi">पारिवारिक विरासत</span>
+              <p className="bio-personality-desc">
+                &ldquo;Seven generations should remain in your knowledge.&rdquo; He believed that knowing where you come from is not vanity &mdash; it is instruction. Every ancestor&rsquo;s story carries a lesson.
+              </p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Service to Others</span>
+              <span className="bio-personality-hindi">सेवा</span>
+              <p className="bio-personality-desc">
+                He found his brother a job without being asked. He taught children who needed help. He invested in others first, and the world &mdash; mysteriously, consistently &mdash; returned the favor.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -169,6 +546,7 @@ function App() {
         <div className="closing-inner fade-in">
           <p className="closing-om">ॐ शान्ति शान्ति शान्ति</p>
           <p className="closing-shanti">Om Shanti Shanti Shanti</p>
+          <Diya />
         </div>
       </section>
 
@@ -178,7 +556,6 @@ function App() {
           <div className="footer-links">
             <Link to="/lifestory" className="footer-link">Life Story</Link>
             <Link to="/memories" className="footer-link">Memories</Link>
-            <Link to="/manan" className="footer-link">Manan&rsquo;s Memories</Link>
           </div>
           <p className="footer-family">The Bhargava Family</p>
           <p className="footer-family-hindi">भार्गव परिवार</p>
