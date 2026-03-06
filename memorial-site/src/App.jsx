@@ -125,10 +125,6 @@ function App() {
           <h1 className="hero-name-hindi">कैलाश नाथ भार्गव</h1>
           <p className="hero-name-english">Kailash Nath Bhargava</p>
           <p className="hero-years">February 13, 1941 &ndash; March 4, 2026</p>
-          <p className="hero-subtitle">
-            Sportsman &middot; NCC Underofficer &middot; Banker &middot; Father &middot; Man of Faith
-          </p>
-
           <div className="hero-quote">
             <p className="hero-quote-hindi">जीवन में दूसरों का भला चाहता है, उसका भला अपने आप भगवान करता है।</p>
             <p className="hero-quote-english">&ldquo;In life, whoever wishes well for others &mdash; God automatically does good for them.&rdquo;</p>
@@ -213,14 +209,14 @@ function App() {
             {/* Generation 1: Parents */}
             <div className="ft-gen ft-gen-parents">
               <div className="ft-node">
-                <span className="ft-name">Shri Ram Bhargava</span>
-                <span className="ft-name-hindi">श्री राम भार्गव</span>
+                <span className="ft-name">Mahesh Prasad Bhargav</span>
+                <span className="ft-name-hindi">महेश प्रसाद भार्गव</span>
                 <span className="ft-role">Father</span>
               </div>
               <span className="ft-amp">&amp;</span>
               <div className="ft-node">
-                <span className="ft-name">Narayani Bhargava</span>
-                <span className="ft-name-hindi">नारायणी भार्गव</span>
+                <span className="ft-name">Shanti Bhargav</span>
+                <span className="ft-name-hindi">शान्ति भार्गव</span>
                 <span className="ft-role">Mother</span>
               </div>
             </div>
@@ -231,36 +227,40 @@ function App() {
             <p className="ft-sibling-label">Their Children</p>
             <div className="ft-siblings">
               <div className="ft-sibling">
-                <span className="ft-name">Vijayshankar</span>
-                <span className="ft-name-hindi">विजयशंकर</span>
-              </div>
-              <div className="ft-sibling">
-                <span className="ft-name">Sharada</span>
-                <span className="ft-name-hindi">शारदा</span>
-              </div>
-              <div className="ft-sibling">
-                <span className="ft-name">Shivshankar</span>
-                <span className="ft-name-hindi">शिवशंकर</span>
-              </div>
-              <div className="ft-sibling">
-                <span className="ft-name">Gorishankar</span>
-                <span className="ft-name-hindi">गोरीशंकर</span>
-              </div>
-              <div className="ft-sibling">
-                <span className="ft-name">Shushila</span>
-                <span className="ft-name-hindi">सुशीला</span>
-              </div>
-              <div className="ft-sibling">
-                <span className="ft-name">Harishankar</span>
-                <span className="ft-name-hindi">हरिशंकर</span>
+                <span className="ft-name">Prem Prakash</span>
+                <span className="ft-name-hindi">प्रेम प्रकाश</span>
               </div>
               <div className="ft-sibling ft-sibling-self">
-                <span className="ft-name">Kalpana</span>
-                <span className="ft-name-hindi">कल्पना</span>
+                <span className="ft-name">Kailash Nath</span>
+                <span className="ft-name-hindi">कैलाश नाथ</span>
               </div>
               <div className="ft-sibling">
-                <span className="ft-name">Kanti</span>
-                <span className="ft-name-hindi">कान्ति</span>
+                <span className="ft-name">Shambu Nath</span>
+                <span className="ft-name-hindi">शम्भू नाथ</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Naresh</span>
+                <span className="ft-name-hindi">नरेश</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Usha</span>
+                <span className="ft-name-hindi">उषा</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Pramod (Munna)</span>
+                <span className="ft-name-hindi">प्रमोद (मुन्ना)</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Rajni</span>
+                <span className="ft-name-hindi">रजनी</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Madhu</span>
+                <span className="ft-name-hindi">मधु</span>
+              </div>
+              <div className="ft-sibling">
+                <span className="ft-name">Sudha</span>
+                <span className="ft-name-hindi">सुधा</span>
               </div>
             </div>
 
@@ -378,13 +378,7 @@ function App() {
               <p className="timeline-city">Beawar</p>
               <p className="timeline-desc">Born on February 13 in Diggi Mohalla, into the Bhargav family. Grew up in Bhargav Gali, surrounded by kinship and legacy.</p>
             </div>
-            <div className="timeline-item fade-in">
-              <div className="timeline-dot" />
-              <p className="timeline-years">1947</p>
-              <p className="timeline-city">Independence &amp; Partition</p>
-              <p className="timeline-desc">Witnessed the turmoil of Partition at age six. The story of Mor Singh and the salt of Dewan Bahadur would stay with him forever.</p>
-            </div>
-            <div className="timeline-item fade-in">
+<div className="timeline-item fade-in">
               <div className="timeline-dot" />
               <p className="timeline-years">~1951</p>
               <p className="timeline-city">The Bageecha</p>
@@ -400,7 +394,7 @@ function App() {
               <div className="timeline-dot" />
               <p className="timeline-years">~1959</p>
               <p className="timeline-city">Ajmer</p>
-              <p className="timeline-desc">Arrived for B.Com Previous with thirty rupees a month. Taught his landlord&rsquo;s children for free; received free rent and meals in return.</p>
+              <p className="timeline-desc">Arrived for B.Com Previous with thirty rupees a month. Taught his landlord&rsquo;s children in exchange for rent and meals.</p>
             </div>
             <div className="timeline-item fade-in">
               <div className="timeline-dot" />

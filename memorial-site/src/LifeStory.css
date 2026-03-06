@@ -43,6 +43,45 @@
   font-weight: 500;
 }
 
+/* Scroll-reveal navigation links */
+.ls-nav-links {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
+}
+
+.ls-nav-links-visible {
+  max-height: 50px;
+  opacity: 1;
+  padding: 0 1.5rem 0.6rem;
+}
+
+.ls-nav-links a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--navy-light);
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  background: rgba(139, 191, 146, 0.15);
+  border: 1px solid rgba(139, 191, 146, 0.25);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.ls-nav-links a:hover {
+  background: var(--sky-blue);
+  border-color: var(--sky-blue);
+  color: var(--navy);
+}
+
 /* Hero header */
 .ls-hero {
   padding: 7rem 1.5rem 3rem;
@@ -283,6 +322,18 @@
   }
   .ls-pullquote {
     padding: 1.25rem 1.25rem;
+  }
+  .ls-nav-links {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .ls-nav-links-visible {
+    max-height: 80px;
+    padding: 0 1rem 0.5rem;
+  }
+  .ls-nav-links a {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 

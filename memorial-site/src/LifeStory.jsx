@@ -49,7 +49,7 @@ function LifeStory() {
         <p className="ls-hero-label">Life Story</p>
         <h1>A Life Well Lived</h1>
         <p className="ls-hero-hindi">कैलाश नाथ भार्गव की जीवन कथा</p>
-        <p className="ls-hero-meta">A narrative compiled from oral history, recorded February 2026 &middot; Part 1</p>
+        <p className="ls-hero-meta">A narrative compiled from a call with grandkids, January 2023</p>
       </section>
 
       <div className="ls-content">
@@ -495,7 +495,6 @@ function LifeStory() {
           <p className="ls-closing-om">ॐ शान्ति शान्ति शान्ति</p>
           <div className="ls-links">
             <Link to="/" className="ls-back-home">&larr; Back to Memorial</Link>
-            <Link to="/manan" className="ls-back-home">Manan&rsquo;s Memories &rarr;</Link>
           </div>
         </div>
       </div>
@@ -505,7 +504,6 @@ function LifeStory() {
           <div className="ls-footer-links">
             <Link to="/" className="ls-footer-link">Memorial</Link>
             <Link to="/memories" className="ls-footer-link">Memories</Link>
-            <Link to="/manan" className="ls-footer-link">Manan&rsquo;s Memories</Link>
           </div>
           <p className="ls-footer-family">The Bhargava Family</p>
           <p className="ls-footer-family-hindi">भार्गव परिवार</p>
