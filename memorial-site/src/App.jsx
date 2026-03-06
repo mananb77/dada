@@ -134,6 +134,9 @@ function App() {
             <Link to="/lifestory" className="hero-link hero-link-primary">
               Read His Life Story
             </Link>
+            <a href="https://youtu.be/r78Pt9suaz0" target="_blank" rel="noopener noreferrer" className="hero-link">
+              Watch Life Story Video
+            </a>
             <Link to="/memories" className="hero-link">
               Leave a Memory
             </Link>
@@ -380,35 +383,29 @@ function App() {
             </div>
 <div className="timeline-item fade-in">
               <div className="timeline-dot" />
-              <p className="timeline-years">~1951</p>
+              <p className="timeline-years">1951</p>
               <p className="timeline-city">The Bageecha</p>
               <p className="timeline-desc">Family moved to the twenty-eight bigha garden. Began raising cows, buffaloes, and thirteen goats. Built the body that would carry him through decades.</p>
             </div>
             <div className="timeline-item fade-in">
               <div className="timeline-dot" />
-              <p className="timeline-years">~1955</p>
+              <p className="timeline-years">1955</p>
               <p className="timeline-city">NCC &amp; School</p>
               <p className="timeline-desc">Joined the NCC at fourteen, rising to Sergeant. Attended the Sanatan Dharm School his great-grandfather had built. Basketball became his great love.</p>
             </div>
             <div className="timeline-item fade-in">
               <div className="timeline-dot" />
-              <p className="timeline-years">~1959</p>
+              <p className="timeline-years">1959</p>
               <p className="timeline-city">Ajmer</p>
               <p className="timeline-desc">Arrived for B.Com Previous with thirty rupees a month. Taught his landlord&rsquo;s children in exchange for rent and meals.</p>
             </div>
             <div className="timeline-item fade-in">
               <div className="timeline-dot" />
-              <p className="timeline-years">~1961</p>
+              <p className="timeline-years">1961</p>
               <p className="timeline-city">Jaipur</p>
               <p className="timeline-desc">Walked fifteen kilometers daily to Commerce College. Rose to NCC Underofficer. Selected for military commission during the 1962 China war.</p>
             </div>
-            <div className="timeline-item fade-in">
-              <div className="timeline-dot" />
-              <p className="timeline-years">~1963</p>
-              <p className="timeline-city">Union Bank</p>
-              <p className="timeline-desc">Joined Union Bank through a network of relationships &mdash; morning walks with a retired GM, a maternal uncle&rsquo;s Ramlila companion. Never applied. Was picked.</p>
-            </div>
-            <div className="timeline-item fade-in">
+<div className="timeline-item fade-in">
               <div className="timeline-dot" />
               <p className="timeline-years">Decades</p>
               <p className="timeline-city">Banking Career</p>
@@ -432,12 +429,7 @@ function App() {
               <p className="quote-english">&ldquo;In life, wish well for others &mdash; God takes care of the rest Himself.&rdquo;</p>
               <p className="quote-context">His life&rsquo;s central philosophy</p>
             </div>
-            <div className="quote-card fade-in">
-              <p className="quote-hindi">सारी चीजें आई हैं &mdash; मैंने कोई चलाके अप्लाई नहीं किया। ऑटोमेटिक।</p>
-              <p className="quote-english">&ldquo;Everything came to me &mdash; I never chased or applied for anything. It all came automatically.&rdquo;</p>
-              <p className="quote-context">On his career</p>
-            </div>
-            <div className="quote-card fade-in">
+<div className="quote-card fade-in">
               <p className="quote-hindi">एक्सरसाइज हो जाती है मेरी।</p>
               <p className="quote-english">&ldquo;It&rsquo;s my exercise.&rdquo;</p>
               <p className="quote-context">Why he walked 15 km daily instead of paying 4 paisa for the bus</p>
@@ -529,7 +521,24 @@ function App() {
           <h2 className="section-title">Photos</h2>
           <p className="section-title-hindi">तस्वीरें</p>
 
-          <p className="gallery-note">Photos coming soon.</p>
+          <div className="gallery-grid">
+            <div className="gallery-item fade-in">
+              <img src="/dada/photos/dada-portrait.jpg" alt="Dada portrait" />
+            </div>
+            <div className="gallery-item fade-in">
+              <img src="/dada/photos/dada-garden.jpg" alt="Dada in the garden" />
+            </div>
+            <div className="gallery-item fade-in">
+              <img src="/dada/photos/dada-dadi.jpg" alt="Dada and Dadi together" />
+            </div>
+          </div>
+
+          <div className="gallery-album fade-in">
+            <a href="https://photos.app.goo.gl/2MM5gnukU3JEBBr69" target="_blank" rel="noopener noreferrer" className="gallery-album-link">
+              View Full Photo Album
+              <span className="gallery-album-hindi">सभी तस्वीरें देखें</span>
+            </a>
+          </div>
         </div>
       </section>
 
