@@ -1293,6 +1293,72 @@
 }
 
 /* ========================================
+   IMPORTANT DATES SECTION
+   ======================================== */
+.dates {
+  background: white;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.date-card {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(44, 62, 90, 0.08);
+}
+
+.date-label {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.1rem;
+}
+
+.date-label-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.date-value {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--navy-light);
+  letter-spacing: 0.02em;
+}
+
+.dates-note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--sage);
+  font-style: italic;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .dates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
    CLOSING SECTION
    ======================================== */
 .closing {

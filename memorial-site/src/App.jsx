@@ -700,6 +700,49 @@ function App() {
         </div>
       </section>
 
+      {/* ======== IMPORTANT DATES ======== */}
+      <section className="dates" id="dates">
+        <div className="section-inner fade-in">
+          <h2 className="section-title">Important Dates</h2>
+          <p className="section-title-hindi">महत्वपूर्ण तिथियाँ</p>
+
+          <div className="dates-grid">
+            <div className="date-card fade-in">
+              <p className="date-label">Passing</p>
+              <p className="date-label-hindi">निधन</p>
+              <p className="date-value">March 4, 2026</p>
+            </div>
+            <div className="date-card fade-in">
+              <p className="date-label">Chautha (4th Day)</p>
+              <p className="date-label-hindi">चौथा</p>
+              <p className="date-value">March 7, 2026</p>
+            </div>
+            <div className="date-card fade-in">
+              <p className="date-label">Daswan (10th Day)</p>
+              <p className="date-label-hindi">दसवाँ</p>
+              <p className="date-value">March 13, 2026</p>
+            </div>
+            <div className="date-card fade-in">
+              <p className="date-label">Tehrvi (13th Day)</p>
+              <p className="date-label-hindi">तेरहवीं</p>
+              <p className="date-value">March 16, 2026</p>
+            </div>
+            <div className="date-card fade-in">
+              <p className="date-label">Monthly Shraddh</p>
+              <p className="date-label-hindi">मासिक श्राद्ध</p>
+              <p className="date-value">4th of each month</p>
+            </div>
+            <div className="date-card fade-in">
+              <p className="date-label">Barsi (1st Anniversary)</p>
+              <p className="date-label-hindi">बरसी</p>
+              <p className="date-value">March 4, 2027</p>
+            </div>
+          </div>
+
+          <p className="dates-note fade-in">Dates calculated from the date of passing: March 4, 2026</p>
+        </div>
+      </section>
+
       {/* ======== CLOSING ======== */}
       <section className="closing">
         <div className="closing-inner fade-in">
