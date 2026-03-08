@@ -37,6 +37,7 @@ function Nav() {
           <li><a href="#wisdom" onClick={closeMenu}>Wisdom</a></li>
           <li><a href="#values" onClick={closeMenu}>Values</a></li>
           <li><a href="#gallery" onClick={closeMenu}>Photos</a></li>
+          <li><a href="#voices" onClick={closeMenu}>Voices</a></li>
           <li><Link to="/memories" onClick={closeMenu}>Memories</Link></li>
         </ul>
         <Link to="/lifestory" className="nav-story-btn" onClick={closeMenu}>His Story</Link>
@@ -113,7 +114,7 @@ function App() {
           <p className="hero-prayer">ॐ शान्ति</p>
 
           <div className="hero-photo-container">
-            <img src="/dada/photos/dada-hero.png" alt="Kailash Nath Bhargava" />
+            <img src="/dada/photos/dada-hero.jpg" alt="Kailash Nath Bhargava" />
           </div>
 
           <h1 className="hero-name-hindi">कैलाश नाथ भार्गव</h1>
@@ -161,48 +162,48 @@ function App() {
           <p className="section-title-hindi">उनका जीवन</p>
 
           <p className="bio-text">
-            Born on February 13, 1941, in Beawar, Rajasthan, into a family whose legacy of generosity and service shaped everything that followed. A boy who milked buffaloes at dawn, walked fifteen kilometers daily to college, and built every opportunity through quiet relationships and unwavering character.
+            Born on February 13, 1941, in Beawar, Rajasthan &mdash; in Diggi Mohalla, surrounded by Bhargava families whose legacy of generosity and service shaped everything that followed. A boy who sold candles, milked buffaloes at dawn, taught his landlord&rsquo;s children in exchange for rent, and walked fifteen kilometers daily to college rather than spend four annas on a bus. He worked his way into banking, where colleagues said: &ldquo;When Bhargava Sahib was transferred in, the branch came back to life.&rdquo; After decades of turning loss-making branches profitable across Rajasthan, he did what most only talk about &mdash; started his own business in retirement, taught himself astrology and homeopathy, and made business calls the very morning he left this world.
           </p>
           <p className="bio-text bio-text-hindi">
-            13 फरवरी, 1941 को बेअवर, राजस्थान में जन्मे — एक ऐसे परिवार में जिसकी उदारता और सेवा की विरासत ने उनके पूरे जीवन को आकार दिया। एक लड़का जो सुबह भैंसों का दूध निकालता था, कॉलेज जाने के लिए रोज़ पंद्रह किलोमीटर पैदल चलता था, और शांत रिश्तों और अडिग चरित्र से हर अवसर बनाता गया।
+            13 फरवरी, 1941 को बेअवर, राजस्थान में डिग्गी मोहल्ला में जन्मे — भार्गव परिवारों के बीच, जिनकी उदारता और सेवा की विरासत ने उनके पूरे जीवन को आकार दिया। एक लड़का जो मोमबत्तियाँ बेचता था, सुबह भैंसों का दूध निकालता था, किराये के बदले बच्चों को पढ़ाता था, और बस के चार आने बचाने के लिए रोज़ पंद्रह किलोमीटर पैदल चलता था। बैंकिंग में घाटे वाली शाखाओं को लाभदायक बनाने के लिए प्रसिद्ध हुए। रिटायरमेंट में अपना व्यापार शुरू किया, ज्योतिष और होम्योपैथी सीखी — और अंतिम दिन की सुबह भी व्यापार की कॉल की।
           </p>
 
           <div className="bio-cards">
             <div className="bio-card">
-              <span className="bio-card-label">Smart</span>
-              <span className="bio-card-hindi">बुद्धिमान</span>
-              <span className="bio-card-detail">Sharp mind, quick learner</span>
-              <span className="bio-card-detail-hindi">तेज़ दिमाग, जल्दी सीखने वाले</span>
+              <span className="bio-card-label">Sharp Mind</span>
+              <span className="bio-card-hindi">तेज़ दिमाग</span>
+              <span className="bio-card-detail">Remembered 101 family names, taught himself astrology &amp; homeopathy</span>
+              <span className="bio-card-detail-hindi">101 परिवारिक नाम याद, खुद ज्योतिष और होम्योपैथी सीखी</span>
             </div>
             <div className="bio-card">
-              <span className="bio-card-label">Kind</span>
-              <span className="bio-card-hindi">दयालु</span>
-              <span className="bio-card-detail">Compassion for all</span>
-              <span className="bio-card-detail-hindi">सबके लिए करुणा</span>
+              <span className="bio-card-label">Kind to All</span>
+              <span className="bio-card-hindi">सबके लिए दयालु</span>
+              <span className="bio-card-detail">Gardener or general manager &mdash; everyone got the same respect</span>
+              <span className="bio-card-detail-hindi">माली हो या जनरल मैनेजर — सबको एक जैसा सम्मान</span>
             </div>
             <div className="bio-card">
-              <span className="bio-card-label">Talented</span>
-              <span className="bio-card-hindi">प्रतिभाशाली</span>
-              <span className="bio-card-detail">Sportsman, leader, banker</span>
-              <span className="bio-card-detail-hindi">खिलाड़ी, नेता, बैंकर</span>
+              <span className="bio-card-label">Athlete</span>
+              <span className="bio-card-hindi">खिलाड़ी</span>
+              <span className="bio-card-detail">Basketball, NCC sergeant at 14, stamina that outlasted men half his age</span>
+              <span className="bio-card-detail-hindi">बास्केटबॉल, 14 में एनसीसी सार्जेंट, आधी उम्र के लोगों से ज़्यादा ऊर्जा</span>
             </div>
             <div className="bio-card">
-              <span className="bio-card-label">Caring</span>
-              <span className="bio-card-hindi">परवाह करने वाले</span>
-              <span className="bio-card-detail">For the entire Bhargava sabha &amp; thousands more</span>
-              <span className="bio-card-detail-hindi">पूरी भार्गव सभा और हज़ारों लोगों के लिए</span>
+              <span className="bio-card-label">Connector</span>
+              <span className="bio-card-hindi">जोड़ने वाले</span>
+              <span className="bio-card-detail">Built a network spanning continents &mdash; Bhargavas in every city connected through him</span>
+              <span className="bio-card-detail-hindi">महाद्वीपों में फैला नेटवर्क बनाया — हर शहर में भार्गव उनसे जुड़े</span>
             </div>
             <div className="bio-card">
-              <span className="bio-card-label">Determined</span>
-              <span className="bio-card-hindi">दृढ़ निश्चयी</span>
-              <span className="bio-card-detail">Work was his passion</span>
-              <span className="bio-card-detail-hindi">काम उनका जुनून था</span>
+              <span className="bio-card-label">Unstoppable</span>
+              <span className="bio-card-hindi">अथक</span>
+              <span className="bio-card-detail">Signed cheques in the ICU, made business calls the morning he passed</span>
+              <span className="bio-card-detail-hindi">ICU में चेक साइन किए, अंतिम दिन सुबह भी व्यापार की कॉल की</span>
             </div>
             <div className="bio-card">
               <span className="bio-card-label">Devoted</span>
               <span className="bio-card-hindi">समर्पित</span>
-              <span className="bio-card-detail">To family, faith &amp; service</span>
-              <span className="bio-card-detail-hindi">परिवार, श्रद्धा और सेवा के प्रति</span>
+              <span className="bio-card-detail">To Mami, his children, his faith &mdash; followed her 26 days later</span>
+              <span className="bio-card-detail-hindi">मामी, बच्चों, श्रद्धा के प्रति — उनके 26 दिन बाद चल बसे</span>
             </div>
           </div>
 
@@ -425,8 +426,22 @@ function App() {
               <div className="timeline-dot" />
               <p className="timeline-years">Decades</p>
               <p className="timeline-city">Banking Career · बैंकिंग करियर</p>
-              <p className="timeline-desc">Served across Rajasthan &mdash; Jodhpur, Kota, Ajmer, Udaipur. Rose to Branch Manager. Built a family. Carried forward the values of seven generations.</p>
-              <p className="timeline-desc-hindi">पूरे राजस्थान में सेवा दी — जोधपुर, कोटा, अजमेर, उदयपुर। ब्रांच मैनेजर बने। परिवार बसाया। सात पीढ़ियों के संस्कार आगे बढ़ाए।</p>
+              <p className="timeline-desc">Served in Jaipur Bank and later Union Bank across Rajasthan &mdash; Jodhpur, Kota, Ajmer, Udaipur. Famous for being posted to loss-making branches and turning them profitable. Colleagues said: when Bhargava Sahib was transferred in, the branch came back to life. Rose to Branch Manager. Built a family. Carried forward the values of seven generations.</p>
+              <p className="timeline-desc-hindi">जयपुर बैंक और बाद में यूनियन बैंक में पूरे राजस्थान में सेवा दी। घाटे वाली शाखाओं को लाभदायक बनाने के लिए प्रसिद्ध थे। ब्रांच मैनेजर बने। परिवार बसाया। सात पीढ़ियों के संस्कार आगे बढ़ाए।</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">Retirement</p>
+              <p className="timeline-city">The Second Innings · दूसरी पारी</p>
+              <p className="timeline-desc">While peers dreamed of business after retirement, Dada actually launched one. Explored astrology, homeopathy, real estate, and multiple ventures &mdash; not out of financial need, but out of a deep-rooted drive to keep contributing. He was the only one among all the people the family knew who actually started something after retirement.</p>
+              <p className="timeline-desc-hindi">जबकि साथियों ने रिटायरमेंट के बाद व्यापार का सपना देखा, दादा ने वास्तव में शुरू किया। ज्योतिष, होम्योपैथी, रियल एस्टेट — योगदान करने की गहरी ललक से।</p>
+            </div>
+            <div className="timeline-item fade-in">
+              <div className="timeline-dot" />
+              <p className="timeline-years">2017</p>
+              <p className="timeline-city">Recovery &amp; Resolve</p>
+              <p className="timeline-desc">Underwent TAVR heart surgery. While still in the ICU, he asked for his chequebook and began signing cheques for pending commitments. Dr. Rao photographed the moment in disbelief &mdash; a patient who refused to stop working even from a hospital bed.</p>
+              <p className="timeline-desc-hindi">TAVR हृदय शल्य चिकित्सा हुई। ICU में रहते हुए भी उन्होंने चेकबुक मँगवाई और लंबित कामों के लिए चेक साइन किए। डॉ. राव ने अचंभित होकर उस पल की तस्वीर ली।</p>
             </div>
           </div>
         </div>
@@ -464,6 +479,36 @@ function App() {
               <p className="quote-english">&ldquo;There are so many stories, we could talk for 10 days and still not finish.&rdquo;</p>
               <p className="quote-context">On his life&rsquo;s many chapters · उनके जीवन के अनेक अध्यायों पर</p>
             </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">खुश होकेय रहना है यहाँ। खुश होकेय जाना।</p>
+              <p className="quote-english">&ldquo;Be happy while you&rsquo;re here. Leave happy.&rdquo;</p>
+              <p className="quote-context">His words 48 hours before passing · जाने से 48 घंटे पहले के शब्द</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">अपनी फैमिली को साथ लेके चलो। अपनी कम्युनिटी को साथ लेके चलो।</p>
+              <p className="quote-english">&ldquo;Walk together with your family. Walk together with your community.&rdquo;</p>
+              <p className="quote-context">His consistent message · उनका निरंतर संदेश</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">एक लीटर दूध पी लिया करो, सत्तू खाओ, बादाम खाओ।</p>
+              <p className="quote-english">&ldquo;Drink a litre of milk daily, eat sattoo, eat almonds &mdash; and build your stamina young. You&rsquo;ll need it for a long innings.&rdquo;</p>
+              <p className="quote-context">On health &amp; longevity · स्वास्थ्य और दीर्घायु पर</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">अगर भार्गव है, तो अपना ही है। जाओ और मिल लो।</p>
+              <p className="quote-english">&ldquo;If they&rsquo;re a Bhargava, they&rsquo;re our own. Go and meet them.&rdquo;</p>
+              <p className="quote-context">On community · समुदाय पर</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">तुझे रोक के ही छोड़ूंगा।</p>
+              <p className="quote-english">&ldquo;I will send you only after I&rsquo;ve made you stay longer.&rdquo;</p>
+              <p className="quote-context">To his son, hours before passing · अपने बेटे से, जाने से कुछ घंटे पहले</p>
+            </div>
+            <div className="quote-card fade-in">
+              <p className="quote-hindi">मामी का काम सब अच्छे से हो गया? कोई कमी तो नहीं रही?</p>
+              <p className="quote-english">&ldquo;Has everything been done properly for Mami? Nothing left incomplete?&rdquo;</p>
+              <p className="quote-context">48 hours before passing &mdash; still thinking of others · जाने से 48 घंटे पहले — अभी भी दूसरों की चिंता</p>
+            </div>
           </div>
         </div>
       </section>
@@ -480,7 +525,7 @@ function App() {
               <span className="bio-personality-label">Generosity</span>
               <span className="bio-personality-hindi">उदारता</span>
               <p className="bio-personality-desc">
-                His great-grandfather gave away a hundred bighas of land to people in need. His grandfather gave up his family to help a stranger marry. Kailash taught children for free and received kindness in return. Generosity was the family&rsquo;s inheritance.
+                His great-grandfather gave away a hundred bighas of land to people in need. His grandfather gave up his family to help a stranger marry. Kailash taught children for free and received kindness in return. He quietly paid the medical bills for his household staff and once stopped on a highway to rescue a stranger&rsquo;s family. Generosity was the family&rsquo;s inheritance.
               </p>
               <p className="bio-personality-desc-hindi">उदारता परिवार की विरासत थी — परदादा ने ज़रूरतमंदों को सौ बीघा ज़मीन दान की, दादा ने बच्चों को मुफ्त पढ़ाया।</p>
             </div>
@@ -496,7 +541,7 @@ function App() {
               <span className="bio-personality-label">Discipline</span>
               <span className="bio-personality-hindi">अनुशासन</span>
               <p className="bio-personality-desc">
-                Up at four in the morning to milk the animals. NCC sergeant at fourteen. Underofficer by college. Basketball until the sweat could fill half a bucket. He committed fully to everything he did.
+                Up at four in the morning to milk the animals. NCC sergeant at fourteen. Underofficer by college. Basketball until the sweat could fill half a bucket. He outworked men in their thirties well into his seventies. He committed fully to everything he did.
               </p>
               <p className="bio-personality-desc-hindi">सुबह चार बजे उठकर दूध निकालना, चौदह साल में एनसीसी सार्जेंट। हर काम पूरे मन से करते थे।</p>
             </div>
@@ -504,7 +549,7 @@ function App() {
               <span className="bio-personality-label">Faith</span>
               <span className="bio-personality-hindi">श्रद्धा</span>
               <p className="bio-personality-desc">
-                &ldquo;God will provide on His own. This is Shiva&rsquo;s grace upon me.&rdquo; His quiet faith was not passive &mdash; it was built on a lifetime of doing the right thing and trusting the outcome.
+                &ldquo;God will provide on His own. This is Shiva&rsquo;s grace upon me.&rdquo; His quiet faith was not passive &mdash; it was built on a lifetime of doing the right thing and trusting the outcome. Mami was his spiritual armor &mdash; her devotion anchored the family&rsquo;s faith.
               </p>
               <p className="bio-personality-desc-hindi">उनकी शांत श्रद्धा सही काम करने और परिणाम पर भरोसा रखने पर बनी थी।</p>
             </div>
@@ -512,7 +557,7 @@ function App() {
               <span className="bio-personality-label">Family Legacy</span>
               <span className="bio-personality-hindi">पारिवारिक विरासत</span>
               <p className="bio-personality-desc">
-                &ldquo;Seven generations should remain in your knowledge.&rdquo; He believed that knowing where you come from is not vanity &mdash; it is instruction. Every ancestor&rsquo;s story carries a lesson.
+                &ldquo;Seven generations should remain in your knowledge.&rdquo; He believed that knowing where you come from is not vanity &mdash; it is instruction. Every ancestor&rsquo;s story carries a lesson. He could name all 101 members of the extended family from memory.
               </p>
               <p className="bio-personality-desc-hindi">सात पीढ़ियों की जानकारी रखना — हर पूर्वज की कहानी में एक सबक है।</p>
             </div>
@@ -520,9 +565,33 @@ function App() {
               <span className="bio-personality-label">Service to Others</span>
               <span className="bio-personality-hindi">सेवा</span>
               <p className="bio-personality-desc">
-                He found his brother a job without being asked. He taught children who needed help. He invested in others first, and the world &mdash; mysteriously, consistently &mdash; returned the favor.
+                He found his brother a job without being asked. He taught children who needed help. He invested in others first, and the world &mdash; mysteriously, consistently &mdash; returned the favor. The network he built spanned continents &mdash; his relationships are an inheritance the family still draws from.
               </p>
               <p className="bio-personality-desc-hindi">बिना माँगे भाई की नौकरी लगवाई, बच्चों को पढ़ाया। दूसरों में पहले निवेश करते थे।</p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Undivided Presence</span>
+              <span className="bio-personality-hindi">पूर्ण ध्यान</span>
+              <p className="bio-personality-desc">
+                When he spoke with you, nothing else existed. Whether on a brief call or a thirty-minute conversation, he was fully present. He never seemed distracted, never made you feel like an interruption. Even in hospital post-surgery, the first thing he asked visitors was about their trip, not his own pain.
+              </p>
+              <p className="bio-personality-desc-hindi">जब वो आपसे बात करते थे, तो बस आप ही थे। कभी विचलित नहीं हुए, कभी किसी को बोझ नहीं लगने दिया।</p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">The Communicator</span>
+              <span className="bio-personality-hindi">संवाद कला</span>
+              <p className="bio-personality-desc">
+                A master of warmth and persuasion. He could charm anyone with sweet, thoughtful words &mdash; &ldquo;meeta bolta tha&rdquo; was the universal observation. He made people feel important the moment they spoke with him. He could convince his family to stay four more years in the country, or convince a nurse to return his phone.
+              </p>
+              <p className="bio-personality-desc-hindi">मीठा बोलते थे — यह सबका अनुभव था। किसी को भी अपनी बात मनवा लेते थे, प्यार से।</p>
+            </div>
+            <div className="bio-personality-card fade-in">
+              <span className="bio-personality-label">Physical Stamina</span>
+              <span className="bio-personality-hindi">शारीरिक ऊर्जा</span>
+              <p className="bio-personality-desc">
+                He treated the body as the foundation for everything else. Morning walks, a litre of milk daily, sattoo, almonds &mdash; non-negotiable. Well into his seventies, he could outwork people in their thirties. He drove cars at high speed into old age. His mental clarity at eighty was proof that a cared-for body sustains the mind.
+              </p>
+              <p className="bio-personality-desc-hindi">शरीर को सब कुछ की नींव मानते थे। सुबह की सैर, एक लीटर दूध, सत्तू, बादाम — अस्सी की उम्र में भी दिमाग तेज़ था।</p>
             </div>
           </div>
         </div>
@@ -557,6 +626,80 @@ function App() {
       </section>
 
 
+      {/* ======== FAMILY VOICES ======== */}
+      <section className="voices" id="voices">
+        <div className="section-inner fade-in">
+          <h2 className="section-title">Family Voices</h2>
+          <p className="section-title-hindi">परिवार की आवाज़ें</p>
+
+          <div className="voices-grid">
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;Whenever you spoke to him, his entire concentration was just on you. Nothing in that moment mattered but you.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;जब भी आप उनसे बात करते थे, उनका पूरा ध्यान सिर्फ़ आप पर होता था। उस पल में आपके सिवा कुछ नहीं मायने रखता था।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He respected every human being. A gardener, a doctor, a ward boy &mdash; they all got the same quality of attention.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो हर इंसान का सम्मान करते थे। माली हो, डॉक्टर हो, वार्ड बॉय हो — सबको एक जैसा ध्यान मिलता था।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He was mentally 40 or 50 years old. His body was just an instrument he had largely disconnected from.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;मानसिक रूप से वो 40-50 साल के थे। शरीर तो बस एक साधन था जिससे उन्होंने काफ़ी हद तक नाता तोड़ लिया था।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;Hi my lovely grandson&rdquo; &mdash; every single call started that way. Every single time.</p>
+              <p className="voice-quote-hindi">&ldquo;Hi my lovely grandson&rdquo; — हर कॉल ऐसे ही शुरू होती थी। हर बार।</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;If there is to be a father, let him be like this...&rdquo;</p>
+              <p className="voice-quote-hindi">पिता हो तो ऐसा हो...</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;The network he built &mdash; we are still reaping from it. He invested in relationships. We get the dividends without having done the work. That&rsquo;s the real inheritance.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;जो नेटवर्क उन्होंने बनाया — हम आज भी उसका फल खा रहे हैं। उन्होंने रिश्तों में निवेश किया। हमें बिना मेहनत किए लाभांश मिलता है। यही असली विरासत है।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He was a great salesman. He sold me the idea of morning walks. I didn&rsquo;t even realise it was happening.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो बहुत अच्छे सेल्समैन थे। उन्होंने मुझे सुबह की सैर का आइडिया बेच दिया। मुझे पता भी नहीं चला कब।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He would wake up early just to see her off, cut her favourite fruits, always answered when she called.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो सुबह जल्दी उठकर उसे विदा करते थे, उसके पसंदीदा फल काटकर रखते थे, और जब भी वो बुलाती — हमेशा जवाब देते थे।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;I don&rsquo;t know where the fuel was coming from. Subah se raat tak &mdash; he could do different things without stopping.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;पता नहीं ऊर्जा कहाँ से आती थी। सुबह से रात तक — बिना रुके अलग-अलग काम करते रहते थे।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He was tired, he had just had surgery &mdash; but the first thing he asked me was &lsquo;beta, tera trip kaisa ja raha hai?&rsquo;&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो थके हुए थे, अभी सर्जरी हुई थी — लेकिन सबसे पहले पूछा &lsquo;बेटा, तेरा ट्रिप कैसा जा रहा है?&rsquo;&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He has set a standard for us. Itna toh kiya hi ja sakta hai. We have seen it. When we fall short, we can always think: he did this. So can we.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;उन्होंने हमारे लिए एक मानक स्थापित किया है। इतना तो किया ही जा सकता है। हमने देखा है। जब हम कमज़ोर पड़ें, तो सोच सकते हैं: उन्होंने किया। हम भी कर सकते हैं।&rdquo;</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;It was a bond of seven lifetimes. When one left, the other followed.&rdquo;</p>
+              <p className="voice-quote-hindi">सात जनम का बंधन था। एक गए, दूसरे भी गए।</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;We take it for granted &mdash; &lsquo;of course I can call so-and-so.&rsquo; But not every family has this. Dada created it. We must now weave our own section of that fabric.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;हम इसे मान लेते हैं — &lsquo;हाँ, फ़लाने को फ़ोन कर लेंगे।&rsquo; लेकिन हर परिवार में यह नहीं होता। दादा ने यह बनाया। अब हमें इस ताने-बाने का अपना हिस्सा बुनना है।&rdquo;</p>
+            </div>
+            <div className="voice-card voice-card-collective fade-in">
+              <p className="voice-quote">&ldquo;He is not gone. What we are doing right now &mdash; meeting together, sharing memories &mdash; that is a continuation of his existence.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो गए नहीं हैं। हम अभी जो कर रहे हैं — साथ मिलना, यादें बाँटना — यही उनके अस्तित्व की निरंतरता है।&rdquo;</p>
+            </div>
+          </div>
+
+          <div className="voices-cta fade-in">
+            <Link to="/stories" className="voices-cta-link">
+              Read Family Stories
+              <span className="voices-cta-hindi">परिवार की कहानियाँ पढ़ें</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ======== CLOSING ======== */}
       <section className="closing">
         <div className="closing-inner fade-in">
@@ -572,6 +715,9 @@ function App() {
 
           <Diya />
 
+          <p className="closing-together">दोनों साथ हैं। जहाँ भी हैं।</p>
+          <p className="closing-together-english">They are together. Wherever they are.</p>
+
           <p className="closing-om">ॐ शान्ति शान्ति शान्ति</p>
           <p className="closing-shanti">Om Shanti Shanti Shanti</p>
           <p className="closing-years">1941 &mdash; 2026</p>
@@ -583,6 +729,7 @@ function App() {
         <div className="footer-inner">
           <div className="footer-links">
             <Link to="/lifestory" className="footer-link">Life Story</Link>
+            <Link to="/stories" className="footer-link">Family Stories</Link>
             <Link to="/memories" className="footer-link">Share a Memory</Link>
           </div>
           <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="footer-whatsapp">

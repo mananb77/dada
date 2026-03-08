@@ -377,20 +377,27 @@
 }
 
 .bio-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  justify-content: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bio-card {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.15rem;
   background: white;
   border-radius: 10px;
   border: 1px solid rgba(139, 191, 146, 0.3);
   text-align: center;
-  min-width: 140px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .bio-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .bio-card:hover {
@@ -415,17 +422,19 @@
 
 .bio-card-detail {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--navy-light);
-  margin-top: 0.15rem;
+  margin-top: 0.3rem;
+  line-height: 1.5;
 }
 
 .bio-card-detail-hindi {
   display: block;
   font-family: var(--font-hindi);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--gold);
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
+  line-height: 1.5;
   opacity: 0.85;
 }
 
@@ -1180,6 +1189,110 @@
 }
 
 /* ========================================
+   FAMILY VOICES SECTION
+   ======================================== */
+.voices {
+  background: linear-gradient(180deg, var(--cream) 0%, #edf6ee 100%);
+}
+
+.voices-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.voices-grid .voice-card {
+  flex: 0 1 calc(50% - 0.625rem);
+}
+
+.voice-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(139, 191, 146, 0.2);
+  border-left: 3px solid var(--sage);
+  box-shadow: 0 2px 12px rgba(44, 62, 90, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.voice-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(44, 62, 90, 0.08);
+}
+
+.voice-card-collective {
+  flex: 0 1 100%;
+  text-align: center;
+  border-left: 1px solid rgba(139, 191, 146, 0.2);
+  border-top: 3px solid var(--gold);
+}
+
+.voice-quote {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--navy);
+  line-height: 1.8;
+}
+
+.voice-quote-hindi {
+  font-family: var(--font-hindi);
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--gold);
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+
+
+.voices-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.voices-cta-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: white;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  transition: all 0.3s ease;
+}
+
+.voices-cta-link:hover {
+  background: var(--gold);
+  color: white;
+  border-color: var(--gold);
+}
+
+.voices-cta-hindi {
+  display: block;
+  font-family: var(--font-hindi);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-top: 0.25rem;
+}
+
+.voices-cta-link:hover .voices-cta-hindi {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 600px) {
+  .voices-grid .voice-card {
+    flex: 0 1 100%;
+  }
+}
+
+/* ========================================
    CLOSING SECTION
    ======================================== */
 .closing {
@@ -1239,6 +1352,22 @@
   color: var(--gold);
   margin-top: 0.15rem;
   margin-bottom: 0.5rem;
+}
+
+.closing-together {
+  font-family: var(--font-hindi);
+  font-size: 1.3rem;
+  color: var(--navy);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.closing-together-english {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--navy-light);
+  font-style: italic;
+  margin-bottom: 2.5rem;
 }
 
 .closing-shanti {
