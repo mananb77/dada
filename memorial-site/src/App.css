@@ -58,6 +58,24 @@
   color: var(--gold);
 }
 
+.nav-story-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--gold);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-story-btn:hover {
+  background: var(--navy);
+}
+
 /* Hamburger button — hidden on desktop */
 .nav-hamburger {
   display: none;
@@ -126,6 +144,10 @@
     display: block;
     padding: 0.7rem 0;
     font-size: 0.85rem;
+  }
+
+  .nav-story-btn {
+    display: none;
   }
 }
 
@@ -278,6 +300,26 @@
   color: white;
 }
 
+.hero-memory-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.hero-link-memory {
+  background: var(--sky-blue-deep);
+  border-color: var(--sky-blue-deep);
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.5rem;
+}
+
+.hero-link-memory:hover {
+  background: #6ea976;
+  border-color: #6ea976;
+  color: white;
+}
+
 @media (max-width: 600px) {
   .hero-links {
     gap: 0.5rem;
@@ -285,6 +327,11 @@
   .hero-link {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
+  }
+  .hero-link-memory {
+    font-size: 1.1rem;
+    padding: 0.9rem 2rem;
+    width: 100%;
   }
 }
 

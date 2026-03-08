@@ -127,6 +127,42 @@
   font-style: italic;
 }
 
+.ls-disclaimer {
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(196, 163, 90, 0.25);
+  border-radius: 10px;
+}
+
+.ls-disclaimer-text {
+  font-size: 0.9rem;
+  color: var(--navy-light);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.ls-disclaimer-text a {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ls-disclaimer-text-hindi {
+  font-family: var(--font-hindi);
+  font-size: 0.85rem;
+  color: var(--gold);
+  line-height: 1.8;
+  opacity: 0.85;
+}
+
+.ls-disclaimer-text-hindi a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* Reading progress bar */
 .ls-progress {
   position: fixed;

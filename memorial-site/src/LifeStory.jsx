@@ -50,6 +50,14 @@ function LifeStory() {
         <h1>A Life Well Lived</h1>
         <p className="ls-hero-hindi">कैलाश नाथ भार्गव की जीवन कथा</p>
         <p className="ls-hero-meta">A narrative compiled from a call with grandkids, January 2023</p>
+        <div className="ls-disclaimer">
+          <p className="ls-disclaimer-text">
+            This narrative covers Dada&rsquo;s childhood through his early career &mdash; it is not yet complete. A significant part of his life, including decades of banking, family milestones, and countless stories, is still missing or incomplete. We need and want your help to fill in the gaps. If you have memories, stories, or details to share, please <Link to="/memories">leave a memory</Link> so we can build a fuller picture of his remarkable life together.
+          </p>
+          <p className="ls-disclaimer-text-hindi">
+            यह कथा दादा के बचपन से लेकर उनके शुरुआती करियर तक की है &mdash; यह अभी पूरी नहीं है। उनके जीवन का एक बड़ा हिस्सा, जिसमें दशकों की बैंकिंग, पारिवारिक पड़ाव और अनगिनत कहानियाँ शामिल हैं, अभी भी अधूरा है। हमें आपकी मदद चाहिए। अगर आपके पास कोई याद, कहानी या जानकारी है, तो कृपया <Link to="/memories">यहाँ साझा करें</Link>।
+          </p>
+        </div>
       </section>
 
       <div className="ls-content">

@@ -37,7 +37,9 @@ function Nav() {
           <li><a href="#wisdom" onClick={closeMenu}>Wisdom</a></li>
           <li><a href="#values" onClick={closeMenu}>Values</a></li>
           <li><a href="#gallery" onClick={closeMenu}>Photos</a></li>
+          <li><Link to="/memories" onClick={closeMenu}>Memories</Link></li>
         </ul>
+        <Link to="/lifestory" className="nav-story-btn" onClick={closeMenu}>His Story</Link>
       </div>
     </nav>
   );
@@ -136,12 +138,14 @@ function App() {
             <a href="https://photos.app.goo.gl/naoPTqv14p7ocMEZ7" target="_blank" rel="noopener noreferrer" className="hero-link">
               Best Photos
             </a>
-            <Link to="/memories" className="hero-link">
-              Leave a Memory
-            </Link>
             <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="hero-link">
               Share on WhatsApp
             </a>
+          </div>
+          <div className="hero-memory-row">
+            <Link to="/memories" className="hero-link hero-link-memory">
+              Leave a Memory
+            </Link>
           </div>
 
           <div className="hero-scroll-hint">
@@ -557,10 +561,10 @@ function App() {
       <section className="closing">
         <div className="closing-inner fade-in">
           <p className="closing-tribute">
-            He didn&rsquo;t just live 84 years. He lived with generosity, built everything through hard work, raised his family with values, served thousands without expectation, and carried the legacy of seven generations forward. His light continues through all of us.
+            He didn&rsquo;t just live 85 years. He lived with generosity, built everything through hard work, raised his family with values, served thousands without expectation, and carried the legacy of seven generations forward. His light continues through all of us.
           </p>
           <p className="closing-tribute-hindi">
-            उन्होंने सिर्फ़ 84 साल नहीं जिए। उन्होंने उदारता से जीवन जिया, मेहनत से सब कुछ बनाया, संस्कारों से परिवार पाला, बिना किसी अपेक्षा के हज़ारों की सेवा की, और सात पीढ़ियों की विरासत को आगे बढ़ाया। उनका प्रकाश हम सभी में जीवित है।
+            उन्होंने सिर्फ़ 85 साल नहीं जिए। उन्होंने उदारता से जीवन जिया, मेहनत से सब कुछ बनाया, संस्कारों से परिवार पाला, बिना किसी अपेक्षा के हज़ारों की सेवा की, और सात पीढ़ियों की विरासत को आगे बढ़ाया। उनका प्रकाश हम सभी में जीवित है।
           </p>
 
           <p className="closing-diya-prompt">Press to light a diya in his memory</p>
@@ -579,7 +583,7 @@ function App() {
         <div className="footer-inner">
           <div className="footer-links">
             <Link to="/lifestory" className="footer-link">Life Story</Link>
-            <Link to="/memories" className="footer-link">Memories</Link>
+            <Link to="/memories" className="footer-link">Share a Memory</Link>
           </div>
           <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="footer-whatsapp">
             Share on WhatsApp
