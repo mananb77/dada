@@ -111,7 +111,7 @@ function App() {
       {/* ======== HERO ======== */}
       <section className="hero">
         <div className="hero-content">
-          <p className="hero-prayer">ॐ शान्ति</p>
+          <p className="hero-prayer">ॐ शान्ति शान्ति शान्ति</p>
 
           <div className="hero-photo-container">
             <img src="/dada/photos/dada-hero.jpg" alt="Kailash Nath Bhargava" />
