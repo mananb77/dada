@@ -38,9 +38,9 @@ function Nav() {
           <li><a href="#values" onClick={closeMenu}>Values</a></li>
           <li><a href="#gallery" onClick={closeMenu}>Photos</a></li>
           <li><a href="#voices" onClick={closeMenu}>Voices</a></li>
-          <li><Link to="/memories" onClick={closeMenu}>Memories</Link></li>
+          <li><Link to="/memories" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Memories</Link></li>
+          <li><Link to="/lifestory" style={{ color: 'var(--gold)' }} onClick={closeMenu}>His Story</Link></li>
         </ul>
-        <Link to="/lifestory" className="nav-story-btn" onClick={closeMenu}>His Story</Link>
       </div>
     </nav>
   );
