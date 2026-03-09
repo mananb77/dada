@@ -40,7 +40,7 @@ function Nav() {
           <li><a href="#voices" onClick={closeMenu}>Voices</a></li>
           <li><Link to="/memories" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Memories</Link></li>
           <li><Link to="/lifestory" style={{ color: 'var(--gold)' }} onClick={closeMenu}>His Story</Link></li>
-          <li><Link to="/grandkids" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Grandsons</Link></li>
+          <li><Link to="/grandkids" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Grandkids</Link></li>
         </ul>
       </div>
     </nav>
@@ -711,8 +711,8 @@ function App() {
               <span className="voices-cta-hindi">परिवार की कहानियाँ पढ़ें</span>
             </Link>
             <Link to="/grandkids" className="voices-cta-link" style={{ marginTop: '0.75rem' }}>
-              From His Grandsons
-              <span className="voices-cta-hindi">पोतों की यादें</span>
+              From His Grandkids
+              <span className="voices-cta-hindi">बच्चों की यादें</span>
             </Link>
           </div>
         </div>
@@ -791,7 +791,7 @@ function App() {
           <div className="footer-links">
             <Link to="/lifestory" className="footer-link">Life Story</Link>
             <Link to="/stories" className="footer-link">Family Stories</Link>
-            <Link to="/grandkids" className="footer-link">From His Grandsons</Link>
+            <Link to="/grandkids" className="footer-link">From His Grandkids</Link>
             <Link to="/memories" className="footer-link">Share a Memory</Link>
           </div>
           <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="footer-whatsapp">

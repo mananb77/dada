@@ -15,13 +15,13 @@ function PersonalMemories() {
       {/* Nav */}
       <nav className="pm-nav">
         <Link to="/" className="pm-back">&larr;</Link>
-        <span className="pm-nav-title">From His Grandsons</span>
+        <span className="pm-nav-title">From His Grandkids</span>
       </nav>
 
       {/* Hero */}
       <header className="pm-hero">
-        <h1 className="pm-heading fade-in">From His Grandsons</h1>
-        <p className="pm-heading-hindi fade-in">दादा जी के पोतों की यादें</p>
+        <h1 className="pm-heading fade-in">From His Grandkids</h1>
+        <p className="pm-heading-hindi fade-in">दादा जी के साथ बच्चों की यादें</p>
         <p className="pm-intro fade-in">
           We sat down together, pressed record, and just talked about Dada. No script, no plan &mdash; just the two of us sharing what we remember and what we don&rsquo;t want to forget. These are the memories we carry.
         </p>
@@ -214,7 +214,7 @@ function PersonalMemories() {
 
       {/* Closing */}
       <section className="pm-section pm-closing fade-in">
-        <p className="pm-closing-sign">&mdash; His grandsons</p>
+        <p className="pm-closing-sign">&mdash; His grandkids</p>
 
         <div className="pm-closing-om fade-in">
           <p>&#2384; &ensp; &#2358;&#2366;&#2344;&#2381;&#2340;&#2367; &ensp; &#2358;&#2366;&#2344;&#2381;&#2340;&#2367; &ensp; &#2358;&#2366;&#2344;&#2381;&#2340;&#2367;</p>
