@@ -40,6 +40,7 @@ function Nav() {
           <li><a href="#voices" onClick={closeMenu}>Voices</a></li>
           <li><Link to="/memories" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Memories</Link></li>
           <li><Link to="/lifestory" style={{ color: 'var(--gold)' }} onClick={closeMenu}>His Story</Link></li>
+          <li><Link to="/grandkids" style={{ color: 'var(--gold)' }} onClick={closeMenu}>Grandsons</Link></li>
         </ul>
       </div>
     </nav>
@@ -688,6 +689,16 @@ function App() {
               <p className="voice-quote">&ldquo;We take it for granted &mdash; &lsquo;of course I can call so-and-so.&rsquo; But not every family has this. Dada created it. We must now weave our own section of that fabric.&rdquo;</p>
               <p className="voice-quote-hindi">&ldquo;हम इसे मान लेते हैं — &lsquo;हाँ, फ़लाने को फ़ोन कर लेंगे।&rsquo; लेकिन हर परिवार में यह नहीं होता। दादा ने यह बनाया। अब हमें इस ताने-बाने का अपना हिस्सा बुनना है।&rdquo;</p>
             </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;He was a masterful multitasker. Always forward-thinking, always on to the next thing for someone else. I don&rsquo;t know if he ever took time just for himself.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;वो एक कुशल मल्टीटास्कर थे। हमेशा आगे की सोचते, हमेशा किसी और के लिए अगला काम। पता नहीं उन्होंने कभी अपने लिए वक़्त निकाला।&rdquo;</p>
+              <p className="voice-attribution">&mdash; His grandsons</p>
+            </div>
+            <div className="voice-card fade-in">
+              <p className="voice-quote">&ldquo;Growing up in this immigrant family, seeing how our grandparents made so many sacrifices for us to be here &mdash; that&rsquo;s a privilege we don&rsquo;t take lightly.&rdquo;</p>
+              <p className="voice-quote-hindi">&ldquo;इस प्रवासी परिवार में बड़े होकर, देखा कि दादा-दादी ने हमारे लिए कितनी क़ुर्बानियाँ दीं — यह एक ऐसा सौभाग्य है जिसे हम हल्के में नहीं लेते।&rdquo;</p>
+              <p className="voice-attribution">&mdash; His grandsons</p>
+            </div>
             <div className="voice-card voice-card-collective fade-in">
               <p className="voice-quote">&ldquo;He is not gone. What we are doing right now &mdash; meeting together, sharing memories &mdash; that is a continuation of his existence.&rdquo;</p>
               <p className="voice-quote-hindi">&ldquo;वो गए नहीं हैं। हम अभी जो कर रहे हैं — साथ मिलना, यादें बाँटना — यही उनके अस्तित्व की निरंतरता है।&rdquo;</p>
@@ -698,6 +709,10 @@ function App() {
             <Link to="/stories" className="voices-cta-link">
               Read Family Stories
               <span className="voices-cta-hindi">परिवार की कहानियाँ पढ़ें</span>
+            </Link>
+            <Link to="/grandkids" className="voices-cta-link" style={{ marginTop: '0.75rem' }}>
+              From His Grandsons
+              <span className="voices-cta-hindi">पोतों की यादें</span>
             </Link>
           </div>
         </div>
@@ -776,6 +791,7 @@ function App() {
           <div className="footer-links">
             <Link to="/lifestory" className="footer-link">Life Story</Link>
             <Link to="/stories" className="footer-link">Family Stories</Link>
+            <Link to="/grandkids" className="footer-link">From His Grandsons</Link>
             <Link to="/memories" className="footer-link">Share a Memory</Link>
           </div>
           <a href="https://api.whatsapp.com/send?text=In%20loving%20memory%20of%20Kailash%20Nath%20Bhargava%20%E2%80%94%20A%20Life%20of%20Generosity%2C%20Hard%20Work%2C%20%26%20Discipline%20%F0%9F%99%8F%20https%3A%2F%2Fmananb77.github.io%2Fdada%2F" target="_blank" rel="noopener noreferrer" className="footer-whatsapp">
