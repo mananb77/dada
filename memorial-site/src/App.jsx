@@ -136,6 +136,9 @@ function App() {
             <a href="https://youtu.be/r78Pt9suaz0" target="_blank" rel="noopener noreferrer" className="hero-link">
               Watch Life Story Video
             </a>
+            <a href="https://docs.google.com/presentation/d/1LEMkIERNfFJ5H0DFkRDD8EUPIDhNzp15z-kVHpMO4TA/edit" target="_blank" rel="noopener noreferrer" className="hero-link">
+              Life Story Slides
+            </a>
             <a href="https://photos.app.goo.gl/naoPTqv14p7ocMEZ7" target="_blank" rel="noopener noreferrer" className="hero-link">
               Best Photos
             </a>
